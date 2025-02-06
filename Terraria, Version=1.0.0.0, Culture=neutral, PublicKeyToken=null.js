@@ -12358,10 +12358,10 @@ JSIL.DeclareNamespace("Terraria");
       }
     }
     if ($thisType.rand === null) {
-      $thisType.rand = $S12().Construct($T4B().get_Now().get_Ticks().ToNumber(4294967295, true));
+      $thisType.rand = $S12().Construct($T4B().get_Now().get_Ticks()//.ToNumber(4294967295, true));
     }
     if ($T39().genRand === null) {
-      $T39().genRand = $S12().Construct($T4B().get_Now().get_Ticks().ToNumber(4294967295, true));
+      $T39().genRand = $S12().Construct($T4B().get_Now().get_Ticks()//.ToNumber(4294967295, true));
     }
     this.OpenSettings();
     var num = ($thisType.rand.Next(5) | 0);
