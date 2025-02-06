@@ -27,8 +27,8 @@
     <script type="text/javascript">
       function runMain () {
         var asm = JSIL.GetAssembly("Terraria", true);
-        var game = new asm.Terraria.Terraria();
-        game.Run();
+        var game = new asm.Terraria.Main();
+        game.Initialize();
       };
     </script>
   </body>
