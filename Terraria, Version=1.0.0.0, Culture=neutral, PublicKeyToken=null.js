@@ -4861,7 +4861,8 @@ JSIL.DeclareNamespace("Terraria");
     this.menuItemScale = JSIL.Array.New($T0A(), $thisType.maxMenuItems);
     this.focusMenu = -1;
     this.selectedMenu = -1;
-    this.selColor = $T04().get_White()//.MemberwiseClone();
+    console.log($T04().get_White())
+    this.selColor = $T04().get_White().MemberwiseClone();
     this.setKey = -1;
     $T1D().prototype._ctor.call(this);
     this.graphics = new ($T1E())(this);
@@ -12358,10 +12359,10 @@ JSIL.DeclareNamespace("Terraria");
       }
     }
     if ($thisType.rand === null) {
-      $thisType.rand = $S12().Construct($T4B().get_Now().get_Ticks()//.ToNumber(4294967295, true));
+      $thisType.rand = $S12().Construct($T4B().get_Now().get_Ticks().ToNumber(4294967295, true));
     }
     if ($T39().genRand === null) {
-      $T39().genRand = $S12().Construct($T4B().get_Now().get_Ticks()//.ToNumber(4294967295, true));
+      $T39().genRand = $S12().Construct($T4B().get_Now().get_Ticks().ToNumber(4294967295, true));
     }
     this.OpenSettings();
     var num = ($thisType.rand.Next(5) | 0);
@@ -12704,6 +12705,7 @@ JSIL.DeclareNamespace("Terraria");
   }; 
 
   function Main_LoadContent () {
+    console.log("loadcontent")
     $thisType.engine = $S13().Construct("Content\\TerrariaMusic.xgs");
     $thisType.soundBank = new ($T4E())($thisType.engine, "Content\\Sound Bank.xsb");
     $thisType.waveBank = $S14().Construct($thisType.engine, "Content\\Wave Bank.xwb");
