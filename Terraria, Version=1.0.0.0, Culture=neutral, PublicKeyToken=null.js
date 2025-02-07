@@ -4861,6 +4861,8 @@ JSIL.DeclareNamespace("Terraria");
     this.menuItemScale = JSIL.Array.New($T0A(), $thisType.maxMenuItems);
     this.focusMenu = -1;
     this.selectedMenu = -1;
+    console.log("aiojaojdoisdjoid")
+    console.log($T04())
     console.log($T04().get_White())
     this.selColor = $T04().get_White().MemberwiseClone();
     this.setKey = -1;
